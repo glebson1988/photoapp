@@ -6,6 +6,7 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable, :confirmable
 
-  has_one :payment
+  has_one :payment, dependent: :destroy
   accepts_nested_attributes_for :payment
+  has_many :images, dependent: :destroy
 end
