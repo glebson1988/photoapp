@@ -1,24 +1,25 @@
-# README
+# PhotoApp
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This tiny application was created in order to learn how to work with 
+payment systems (Stripe) and with cloud storage (Amazon S3)
 
-Things you may want to cover:
+### Features:
 
-* Ruby version
+* User can sign up
+* When registering, the user can select a tariff
+* User can upload images if logged in
+* A logged in user has access to uploaded images
 
-* System dependencies
+**Ruby & Rails version:**
+- ruby 2.6.3
+- rails 5.2.4.2
 
-* Configuration
+**Gems:**
+- 'Devise' for authentication
+- 'Devise-bootstrap-views' for pretty forms
+- gem 'mini_magick' wrapper for ImageMagic
+- gem 'carrierwave' uploader
+- gem 'fog-aws' module for the 'fog' gem to support AWS
+- gem 'stripe' for access to the Stripe API
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+https://glebson-photoapp.herokuapp.com/
