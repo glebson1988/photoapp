@@ -21,5 +21,3 @@ payment systems (Stripe) and with cloud storage (Amazon S3)
 - gem 'carrierwave' uploader
 - gem 'fog-aws' module for the 'fog' gem to support AWS
 - gem 'stripe' for access to the Stripe API
-
-https://glebson-photoapp.herokuapp.com/
